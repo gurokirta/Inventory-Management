@@ -34,7 +34,9 @@ function CardPopularProducts() {
                   </div>
                 </div>
                 {/* Second Column */}
-                <div className="flex items-center text-xs"></div>
+                <div className="flex items-center text-xs">
+                  <button className="p-2 rounded-full bg-blue-100 text-blue-600 mr-2"></button>
+                </div>
               </div>
             ))}
           </div>

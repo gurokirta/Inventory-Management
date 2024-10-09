@@ -1,8 +1,8 @@
 -- CreateTable
 CREATE TABLE "Users" (
     "userId" TEXT NOT NULL,
-    "email" TEXT NOT NULL,
     "name" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
 
     CONSTRAINT "Users_pkey" PRIMARY KEY ("userId")
 );
@@ -53,13 +53,13 @@ CREATE TABLE "Expenses" (
 );
 
 -- CreateTable
-CREATE TABLE "SaleSummary" (
-    "saleSummaryId" TEXT NOT NULL,
+CREATE TABLE "SalesSummary" (
+    "salesSummaryId" TEXT NOT NULL,
     "totalValue" DOUBLE PRECISION NOT NULL,
     "changePercentage" DOUBLE PRECISION,
     "date" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "SaleSummary_pkey" PRIMARY KEY ("saleSummaryId")
+    CONSTRAINT "SalesSummary_pkey" PRIMARY KEY ("salesSummaryId")
 );
 
 -- CreateTable

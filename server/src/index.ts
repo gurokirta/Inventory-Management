@@ -9,7 +9,6 @@ import morgan from "morgan";
 import dashboardRoutes from "./routes/dashboardRoutes";
 // Configurations
 dotenv.config();
-
 const app = express();
 app.use(express.json());
 app.use(helmet());
@@ -23,7 +22,7 @@ app.use(cors());
 app.use("/dashboard", dashboardRoutes);
 
 // Server
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

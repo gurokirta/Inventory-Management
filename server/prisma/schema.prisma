@@ -15,8 +15,8 @@ datasource db {
 
 model Users {
   userId String @id
-  email  String
   name   String
+  email  String
 }
 
 model Products {
@@ -56,8 +56,8 @@ model Expenses {
   timestamp DateTime
 }
 
-model SaleSummary {
-  saleSummaryId    String   @id
+model SalesSummary {
+  salesSummaryId   String   @id
   totalValue       Float
   changePercentage Float?
   date             DateTime

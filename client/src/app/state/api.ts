@@ -9,7 +9,7 @@ export interface Product {
 }
 
 export interface SalesSummary {
-  saleSummaryId: string;
+  salesSummaryId: string;
   totalValue: number;
   changePercentage?: number;
   date: string;

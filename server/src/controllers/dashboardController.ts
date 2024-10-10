@@ -1,6 +1,5 @@
 import { Response, Request } from "express";
 import { PrismaClient } from "@prisma/client";
-import { it } from "node:test";
 
 const prisma = new PrismaClient();
 
